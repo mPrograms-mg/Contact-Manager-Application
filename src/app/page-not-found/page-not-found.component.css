@@ -1,0 +1,9 @@
+#page-not-found {
+  object-fit: contain;
+  width: 100%;
+  height: 89vh;
+}
+.text-success {
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif !important;
+}

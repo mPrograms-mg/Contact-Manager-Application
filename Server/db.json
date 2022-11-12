@@ -1,0 +1,40 @@
+{
+  "contact": [
+    {
+      "name": "Mahesh Kshirsagar",
+      "photoUrl": "https://cdn-icons-png.flaticon.com/512/219/219983.png",
+      "email": "maheshk@gmail.com",
+      "mobile": 9876543210,
+      "company": "Narola Infotech",
+      "title": "Software Engineer ",
+      "groupId": "6",
+      "id": 1
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}

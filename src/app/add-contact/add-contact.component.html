@@ -1,0 +1,101 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <p>
+        <span class="p"> Add</span> Contact Manager Application using JSON API
+        with Add,Edit,Delete,View,Search Contacts feature. And Also provide
+        share details thought the mail etc. and Many more feature are als coming
+        soon.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Form -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <form [formGroup]="contactForm" (ngSubmit)="ContactSubmit()">
+        <div class="mb-2">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Name....."
+            formControlName="name"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name="photo"
+            id="photo"
+            class="form-control"
+            placeholder="Photo Url....."
+            formControlName="photoUrl"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            class="form-control"
+            placeholder="Email....."
+            formControlName="email"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form-control"
+            placeholder="Mobile....."
+            formControlName="mobile"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name="company"
+            id="company"
+            class="form-control"
+            placeholder="Company....."
+            formControlName="company"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="form-control"
+            placeholder="Title....."
+            formControlName="title"
+          />
+        </div>
+        <div class="mb-2">
+          <select name="" id="" class="form-control" formControlName="groupId">
+            <option value="">Select a Group</option>
+            <option *ngFor="let group of groups" [value]="group.id">
+              {{ group.name }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <button *ngIf="isAddMode" class="btn btn-success ms-2" type="submit">
+            Create<i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+          <button *ngIf="!isAddMode" class="btn btn-success ms-2" type="submit">
+            Update<i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+          <a class="btn btn-dark ms-2" routerLink="/">
+            <i class="fa fa-arrow-alt-circle-left"></i>Close</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

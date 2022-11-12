@@ -1,0 +1,9 @@
+.h3 {
+  color: #674ea7;
+}
+.contact-img {
+  width: 150px;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+}

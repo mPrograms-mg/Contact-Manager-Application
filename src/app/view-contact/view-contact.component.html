@@ -1,0 +1,54 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col para">
+      <p>
+        <span class="p"> View</span> Contact Manager Application using JSON API
+        with Add,Edit,Delete,View,Search Contacts feature. And Also provide
+        share details thought the mail etc. and Many more feature are als coming
+        soon.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- View Contact -->
+<div class="container">
+  <div class="row align-item-center">
+    <div class="col-sm-4">
+      <img
+        [src]="contact?.photoUrl"
+        alt=""
+        width="200px"
+        style="border-radius: 50%"
+      />
+    </div>
+    <div class="col-sm-6">
+      <ul class="list-group">
+        <li class="list-group-item">
+          Name: <span class="fw-bold">{{ contact?.name }}</span>
+        </li>
+        <li class="list-group-item my-1">
+          Email: <span class="fw-bold">{{ contact?.email }}</span>
+        </li>
+        <li class="list-group-item">
+          Mobile: <span class="fw-bold">{{ contact?.mobile }}</span>
+        </li>
+        <li class="list-group-item my-1">
+          Company: <span class="fw-bold">{{ contact?.company }}</span>
+        </li>
+        <li class="list-group-item">
+          Title: <span class="fw-bold">{{ contact?.title }}</span>
+        </li>
+        <li class="list-group-item my-1">
+          Group Name: <span class="fw-bold">{{ group?.name }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <a class="btn btn-dark ms-2" routerLink="/">
+        <i class="fa fa-arrow-alt-circle-left"></i> Close</a
+      >
+    </div>
+  </div>
+</div>
